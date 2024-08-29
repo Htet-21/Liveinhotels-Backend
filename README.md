@@ -1,13 +1,13 @@
-#API Access Instructions
+# API Access Instructions
 
 Base URL
 The base URL for all API endpoints is:
 
-###http://localhost:5000/api
+### http://localhost:5000/api
 Authentication
 Before accessing most API endpoints, you need to authenticate and obtain a JSON Web Token (JWT).
 
-##1. Register a New User
+## 1. Register a New User
 Endpoint: POST /api/auth/register
 Description: Register a new user.
 Request Body:
@@ -23,7 +23,7 @@ json
 }
 Response: Returns the created user object.
 
-##2. Log In
+## 2. Log In
 Endpoint: POST /api/auth/login
 Description: Log in to obtain an access token.
 Request Body:
@@ -42,9 +42,9 @@ json
 Note: Use the accessToken from this response for authenticated requests.
 
 
-#API Endpoints
-##Users
-##Create User
+# API Endpoints
+## Users
+## Create User
 
 Endpoint: POST /api/user
 Description: Create a new user.
@@ -205,13 +205,13 @@ json
 Response: Confirmation message.
 
 
-#Testing with Postman
-##Register a New User:
+# Testing with Postman
+## Register a New User:
 
 Set the method to POST and the URL to http://localhost:5000/api/auth/register.
 Add the request body as shown above.
 
-##Log In:
+## Log In:
 
 Set the method to POST and the URL to http://localhost:5000/api/auth/login.
 Add the request body as shown above.
@@ -220,7 +220,7 @@ Use the Access Token:
 Copy the accessToken from the login response.
 For all authenticated requests, add a header: Authorization: Bearer <your_access_token>.
 
-##Make Requests:
+## Make Requests:
 
 Set the method to POST and the URL to http://localhost:5000/api/project and http://localhost:5000/api/timesheet
 Add the request body as shown above.
