@@ -13,14 +13,22 @@ Description: Register a new user.
 Request Body:
 json
  
-{
+ {
+ 
   "firstName": "Jane",
+  
   "lastName": "Doe",
+  
   "dateOfBirth": "1995-05-15",
+  
   "gender": "Female",
+  
   "email": "jane.doe@example.com",
+  
   "password": "password123"
+  
 }
+
 Response: Returns the created user object.
 
 ## 2. Log In
@@ -29,16 +37,25 @@ Description: Log in to obtain an access token.
 Request Body:
 json
  
+
 {
+
   "email": "jane.doe@example.com",
+  
   "password": "password123"
+  
 }
+
 Response:
 json
  
+
 {
+
   "accessToken": "your_jwt_token"
+  
 }
+
 Note: Use the accessToken from this response for authenticated requests.
 
 
@@ -52,14 +69,23 @@ Headers: Authorization: Bearer <your_access_token>
 Request Body:
 json
  
+
 {
+
   "firstName": "Jane",
+  
   "lastName": "Doe",
+  
   "dateOfBirth": "1995-05-15",
+  
   "gender": "Female",
+  
   "email": "jane.doe@example.com",
+  
   "password": "your_password"
+  
 }
+
 Response: Returns the created user object.
 Get User by ID
 
@@ -85,10 +111,15 @@ Headers: Authorization: Bearer <your_access_token>
 Request Body:
 json
  
+
 {
+
   "firstName": "Updated Name",
+  
   "lastName": "Updated Last Name"
+  
 }
+
 Response: Confirmation message.
 Delete User
 
@@ -105,13 +136,21 @@ Headers: Authorization: Bearer <your_access_token>
 Request Body:
 json
  
+
 {
+
   "name": "New Project",
+  
   "department": "Development",
+
   "startDate": "2024-01-01",
+  
   "endDate": "2024-12-31",
+  
   "status": "Active"
+  
 }
+
 Response: Returns the created project object.
 Get Project by ID
 
@@ -133,9 +172,13 @@ Headers: Authorization: Bearer <your_access_token>
 Request Body:
 json
  
+
 {
+
   "status": "Completed"
+  
 }
+
 Response: Confirmation message.
 Delete Project
 
@@ -152,13 +195,21 @@ Headers: Authorization: Bearer <your_access_token>
 Request Body:
 json
  
+
 {
+
   "taskName": "Task 1",
+  
   "date": "2024-08-15",
+  
   "hours": 8,
+  
   "userId": 1,
+  
   "projectId": 1
+  
 }
+
 Response: Returns the created timesheet object.
 Get Timesheet by ID
 
@@ -180,9 +231,13 @@ Headers: Authorization: Bearer <your_access_token>
 Request Body:
 json
  
+
 {
+
   "hours": 6
+  
 }
+
 Response: Confirmation message.
 Delete Timesheet
 
@@ -198,10 +253,14 @@ Headers: Authorization: Bearer <your_access_token>
 Request Body:
 json
  
+
 {
   "userId": 1,
+  
   "projectId": 1
+  
 }
+
 Response: Confirmation message.
 
 
